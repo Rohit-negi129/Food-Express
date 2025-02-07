@@ -1,0 +1,61 @@
+#restaurant-list {
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center cards horizontally */
+    padding: 20px; /* Add some padding around the list */
+}
+
+.restaurant {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 50px; /* Space between cards vertically */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+.card {
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    transition: box-shadow 0.3s; /* Smooth shadow transition */
+    overflow: hidden; /* Prevent content overflow */
+    max-width: 300px; /* Limit card width */
+    width: 100%; /* Full width for card */
+    background-color: #ffffff; /* White background for the card */
+}
+
+.card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.restaurant-title {
+    font-size: 1.5rem; /* Title size */
+    font-weight: bold; /* Bold title */
+    color: #333; /* Dark text color */
+}
+
+.restaurant-image {
+    width: 100%; /* Full width for the image */
+    height: 180px; /* Fixed height for images */
+    object-fit: cover; /* Cover image for aspect ratio */
+}
+
+.content {
+    padding: 15px; /* Padding for content */
+}
+
+.description {
+    color: #555; /* Dark grey for description */
+    font-size: 0.9rem; /* Font size for description */
+    margin-bottom: 10px; /* Space below description */
+}
+
+.location {
+    color: #777; /* Lighter grey for location */
+    font-size: 0.85rem; /* Smaller font size for location */
+}
+
+mat-icon {
+    vertical-align: middle; /* Center icon vertically */
+    color: #4A90E2; /* Icon color */
+}

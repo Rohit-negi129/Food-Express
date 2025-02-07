@@ -1,0 +1,47 @@
+<div id="background">
+  <div id="top">
+      <div class="registration-form">
+          <h2>Registration</h2>
+          <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+              <div class="form-group">
+                  <label for="firstName">First Name:</label>
+                  <input type="text" id="firstName" placeholder="Enter your First Name" formControlName="firstName" />
+                  <div class="error-message" *ngIf="userForm.get('firstName')?.hasError('required') && userForm.get('firstName')?.touched">
+                      First Name is required.
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label for="lastName">Last Name:</label>
+                  <input type="text" id="lastName" placeholder="Enter your Last Name" formControlName="lastName" />
+                  <div class="error-message" *ngIf="userForm.get('lastName')?.hasError('required') && userForm.get('lastName')?.touched">
+                      Last Name is required.
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" placeholder="Enter your Email" formControlName="userEmail" />
+                  <div class="error-message" *ngIf="userForm.get('userEmail')?.hasError('required') && userForm.get('userEmail')?.touched">
+                      Email is required.
+                  </div>
+                  <div class="error-message" *ngIf="userForm.get('userEmail')?.hasError('pattern') && userForm.get('userEmail')?.touched">
+                      Please enter a valid email address.
+                  </div>
+              </div>
+              <div class="form-group">
+                  <span>Password</span>
+                  <input type="password" placeholder="Enter your Password" formControlName="password">
+                  <div class="error-message" *ngIf="userForm.get('password')?.hasError('required') && userForm.get('password')?.dirty">
+                      Password is required.
+                  </div>
+                  <div class="error-message" *ngIf="userForm.get('password')?.hasError('pattern')">
+                      Should have a minimum of 7 characters, including a symbol, upper and lower case letters, and a number.
+                  </div>
+              </div>
+
+              <button type="submit" [disabled]="userForm.invalid">Register</button>
+              <br>
+              <p>Already have an account? <button id="click" type="button" routerLink="/signin">Login here</button></p>
+          </form>
+      </div>
+  </div>
+</div>

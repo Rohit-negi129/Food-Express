@@ -1,0 +1,51 @@
+#top {
+  padding: 20px;
+  background-color: #f8f8f8; /* Light background */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: center;
+  margin: 20px auto;
+  max-width: 800px; /* Centering and max width */
+}
+
+h1 {
+  font-size: 2em;
+  color: #ff4500; /* Bold, warm color for the title */
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
+  gap: 15px; /* Spacing between buttons */
+}
+
+.action-button {
+  background-color: #ff6347; /* Vibrant tomato color */
+  color: white;
+  font-size: 1.1em;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: bold;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.action-button:hover {
+  background-color: #ff4500; /* Slightly darker on hover */
+  transform: scale(1.05); /* Button enlarges on hover */
+}
+
+@media (max-width: 600px) {
+  h1 {
+      font-size: 1.5em;
+  }
+
+  .action-button {
+      padding: 10px 20px;
+      font-size: 1em;
+  }
+}

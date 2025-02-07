@@ -1,0 +1,16 @@
+
+<div routerLink="/restaurant/{{rest?.restaurantId}}" class="restaurant">
+<mat-card class="card">
+  <mat-card-header>
+    <mat-card-title>{{rest?.restaurantName}}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image src="../../assets/restaurantimage/{{rest?.restaurantImage}}.jpeg" id="img">
+  <mat-card-content class="content" >
+    <!-- <mat-card-subtitle class="content"></mat-card-subtitle>
+    <mat-card-subtitle class="content">{{rest?.locality}}</mat-card-subtitle> -->
+    <p> {{rest?.description}}</p>
+    <p><mat-icon>room</mat-icon>{{rest?.location}}</p>
+  </mat-card-content>
+
+</mat-card>
+</div>

@@ -1,0 +1,47 @@
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px; /* Adjusted max-width for better readability */
+    background-color: #f9f9f9; /* Light background for the cart */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.card-table {
+    margin-top: 20px;
+}
+
+.empty-cart {
+    text-align: center; /* Center-align text */
+    margin-top: 20px; /* Space above the empty cart section */
+}
+
+.empty-cart-image {
+    width: 150px; /* Fixed width for the empty cart image */
+    margin-bottom: 15px; /* Space below the image */
+}
+
+h4.card-title {
+    text-align: center; /* Center the card title */
+    margin-bottom: 15px; /* Space below title */
+}
+
+.table th,
+.table td {
+    text-align: center; /* Center text in table */
+}
+
+.quantity-control {
+    display: flex; /* Flexbox layout for quantity control */
+    align-items: center; /* Center items vertically */
+}
+
+.quantity-control button {
+    margin: 0 5px; /* Space around buttons */
+}
+
+.btn-danger,
+.btn-primary,
+.btn-success {
+    width: 100%; /* Full-width buttons */
+}

@@ -1,0 +1,52 @@
+.food-card {
+    max-width: 300px; /* Maximum width for the card */
+    min-height: 350px; /* Minimum height for the card */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Softer shadow effect */
+    margin: 30px; /* Space around cards */
+    overflow: hidden; /* Prevent content overflow */
+    display: inline-flex; /* Flexbox layout */
+    flex-direction: column; /* Stack elements vertically */
+    background-color: #ffffff; /* White background for a clean look */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+.food-image {
+    width: 100%; /* Full width for the image */
+    height: auto; /* Auto height to maintain aspect ratio */
+    max-height: 200px; /* Max height for images */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-bottom: 2px solid #f1f1f1; /* Add a border below the image */
+}
+
+.mat-card-content {
+    flex-grow: 1; /* Allow content to grow */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: space-between; /* Space between elements */
+    padding: 15px; /* Padding for content */
+}
+
+.content {
+    margin: 10px 0; /* Space above and below content */
+    color: #555; /* Dark grey for description text */
+}
+
+.price {
+    font-size: 1.2rem; /* Larger font size for price */
+    color: #e53935; /* Bright red for the price */
+}
+
+.add-to-cart {
+    background-color: #ff9800; /* Orange background for the button */
+    color: white; /* White text color */
+    border-radius: 5px; /* Rounded corners for the button */
+    padding: 10px 15px; /* Padding for the button */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s; /* Smooth background transition */
+    margin-top: auto; /* Push button to the bottom */
+}
+
+.add-to-cart:hover {
+    background-color: #fb8c00; /* Darker orange on hover */
+}

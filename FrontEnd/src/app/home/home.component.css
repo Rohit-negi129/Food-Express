@@ -1,0 +1,94 @@
+/* Reset and body styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+/* Header and Footer Height */
+header {
+    height: 60px; /* Example header height */
+}
+
+footer {
+    height: 80px; /* Example footer height */
+}
+
+/* Hero Section Styling */
+.hero {
+    position: relative;
+    height: calc(100vh - 140px); /* Full height minus header and footer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the section without distortion */
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
+}
+
+#about {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+}
+
+#about h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3em;
+    font-weight: bold;
+    color: #ffcc00; /* Bright Yellow for the heading */
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #ff4500; /* Orange Red for button background */
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    color: #ffffff; /* White text */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #ff6347; /* Tomato color on hover */
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    #about h1 {
+        font-size: 2em; /* Reduce font size on smaller screens */
+    }
+
+    button {
+        width: 100px; /* Adjust button width */
+    }
+}

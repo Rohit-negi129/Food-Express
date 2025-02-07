@@ -1,0 +1,33 @@
+<div id="container">
+  <div id="card">
+      <p id="signIn">Sign In</p>
+      <form [formGroup]="loginform" (ngSubmit)="signin()">
+          <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" placeholder="Enter your Email" formControlName="userEmail" />
+              <div class="error-message" *ngIf="loginform.get('userEmail')?.hasError('required') && loginform.get('userEmail')?.touched">
+                  Email is required.
+              </div>
+              <div class="error-message" *ngIf="loginform.get('userEmail')?.hasError('pattern') && loginform.get('userEmail')?.touched">
+                  Please enter a valid email address.
+              </div>
+          </div>
+          <div class="form-group">
+              <label for="password">Password:</label>
+              <input type="password" placeholder="Enter your Password" formControlName="password" />
+              <div class="error-message" *ngIf="loginform.get('password')?.hasError('required') && loginform.get('password')?.touched">
+                  Password is required
+              </div>
+              <div class="error-message" *ngIf="loginform.get('password')?.hasError('pattern')">
+                  <span>Should have at least 7 characters, including a symbol, upper and lower case letters, and a number.</span>
+              </div>
+          </div>
+
+          <div>
+              <button type="submit" [disabled]="!loginform.valid">Login</button>
+          </div>
+      </form>
+      <br>
+      <p>New user? <button id="click" type="submit" routerLink="/register">Register here</button></p>
+  </div>
+</div>

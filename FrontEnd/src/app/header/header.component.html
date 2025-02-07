@@ -1,0 +1,31 @@
+<header>
+    <div class="container">
+        <a routerLink="" *ngIf="!authService.isAuthenticatedUser()" class="logo">
+            The Food Express 
+            <mat-icon id="moto">motorcycle</mat-icon>
+        </a>
+        <a routerLink="/restaurant" *ngIf="authService.isAuthenticatedUser()" class="logo">
+            The Food Express 
+            <mat-icon id="moto">motorcycle</mat-icon>
+        </a>
+
+        <nav>
+            <ul>
+                <li>
+                    <a routerLink="" *ngIf="!authService.isAuthenticatedUser()"><mat-icon>home</mat-icon></a> 
+                    <a routerLink="/restaurant" *ngIf="authService.isAuthenticatedUser()"><mat-icon>home</mat-icon></a>
+                    <a routerLink="/signin" *ngIf="!authService.isAuthenticatedUser()">
+                        <mat-icon>login</mat-icon>
+                    </a>
+                    <a (click)="logout()" *ngIf="authService.isAuthenticatedUser()">
+                        <mat-icon>logout</mat-icon>
+                        <span>{{ authService.getUserName() }}</span>
+                    </a>
+                    <a routerLink="/cart"><mat-icon>shopping_cart</mat-icon>
+                        <div class="badge bg-danger">{{ totalItem }}</div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>

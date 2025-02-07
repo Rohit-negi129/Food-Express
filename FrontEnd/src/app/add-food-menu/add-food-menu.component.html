@@ -1,0 +1,56 @@
+<div id="box">
+  <div id="add-food">
+      <h2>Add Food</h2>
+      <hr>
+      <br>
+
+      <form [formGroup]="foodMenuForm" action="">
+          <mat-form-field appearance="fill">
+              <mat-label>Restaurant Id</mat-label>
+              <input matInput type="text" formControlName="restaurantId">
+              <mat-hint *ngIf="!restaurantId?.valid && restaurantId?.dirty">Invalid Restaurant Id</mat-hint>
+          </mat-form-field>
+          <br>
+
+          <mat-form-field appearance="fill">
+              <mat-label>Food Name</mat-label>
+              <input matInput type="text" formControlName="itemName">
+              <mat-hint *ngIf="!itemName?.valid && itemName?.dirty">Invalid Food Name</mat-hint>
+          </mat-form-field>
+          <br>
+
+          <mat-form-field appearance="fill">
+              <mat-label>Description</mat-label>
+              <input matInput type="text" formControlName="description">
+              <mat-hint *ngIf="!description?.valid && description?.dirty">Invalid Description</mat-hint>
+          </mat-form-field>
+          <br>
+
+          <mat-form-field appearance="fill">
+              <mat-label>Food Id</mat-label>
+              <input matInput type="text" formControlName="itemId">
+              <mat-hint *ngIf="!itemId?.valid && itemId?.dirty">Invalid Food Id</mat-hint>
+          </mat-form-field>
+          <br>
+
+          <mat-form-field appearance="fill">
+              <mat-label>Price</mat-label>
+              <input matInput type="text" formControlName="price">
+              <mat-hint *ngIf="!price?.valid && price?.dirty">Invalid Price</mat-hint>
+          </mat-form-field>
+          <br>
+
+          <mat-form-field appearance="fill">
+              <mat-label>Food Image</mat-label>
+              <input matInput type="text" formControlName="foodImage">
+              <mat-hint *ngIf="!foodImage?.valid && foodImage?.dirty">Invalid Food Image</mat-hint>
+          </mat-form-field>
+          <br>
+
+          <div class="button-container">
+              <button class="action-button" type="submit" [disabled]="foodMenuForm.invalid" (click)="submit()">Add Food</button>
+              <button class="action-button" type="button" routerLink="/admin">Main Menu</button>
+          </div>
+      </form>
+  </div>
+</div>

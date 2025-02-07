@@ -1,0 +1,31 @@
+<div id="box">
+    <div id="delete-food">
+      <h2>Delete Food</h2>
+      <hr>
+      <form [formGroup]="deleteFoodForm" (ngSubmit)="deleteFoodItem()">
+        <mat-form-field appearance="fill">
+          <mat-label>Restaurant ID</mat-label>
+          <input matInput type="text" formControlName="restaurantId">
+          <mat-hint *ngIf="deleteFoodForm.controls['restaurantId'].invalid && deleteFoodForm.controls['restaurantId'].dirty">
+            Restaurant ID is required
+          </mat-hint>
+        </mat-form-field>
+        <br>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Food Item ID</mat-label>
+          <input matInput type="number" formControlName="itemId">
+          <mat-hint *ngIf="deleteFoodForm.controls['itemId'].invalid && deleteFoodForm.controls['itemId'].dirty">
+            Food Item ID is required
+          </mat-hint>
+        </mat-form-field>
+        <br>
+  
+        <div class="button-container">
+          <button type="submit" mat-raised-button color="primary" [disabled]="deleteFoodForm.invalid">Delete Food Item</button>
+          <button type="button" mat-raised-button color="accent" routerLink="/admin">Main Menu</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  

@@ -1,0 +1,59 @@
+<div id="box">
+  <div id="add-restaurant">
+    <h2>Add Restaurant</h2>
+    <hr>
+    <br>
+
+    <form [formGroup]="registration" (ngSubmit)="submit()">
+      <mat-form-field appearance="fill">
+        <mat-label>Restaurant UniqueId</mat-label>
+        <input matInput type="text" formControlName="restaurantId" />
+        <mat-hint *ngIf="registration.controls['restaurantId'].invalid && registration.controls['restaurantId'].dirty">
+          Restaurant UniqueId is required
+        </mat-hint>
+      </mat-form-field>
+      <br />
+
+      <mat-form-field appearance="fill">
+        <mat-label>Restaurant Name</mat-label>
+        <input matInput type="text" formControlName="restaurantName" />
+        <mat-hint *ngIf="registration.controls['restaurantName'].invalid && registration.controls['restaurantName'].dirty">
+          Invalid Restaurant Name
+        </mat-hint>
+      </mat-form-field>
+      <br />
+
+      <mat-form-field appearance="fill">
+        <mat-label>Description</mat-label>
+        <input matInput type="text" formControlName="description" />
+        <mat-hint *ngIf="registration.controls['description'].invalid && registration.controls['description'].dirty">
+          Description is required
+        </mat-hint>
+      </mat-form-field>
+      <br />
+
+      <mat-form-field appearance="fill">
+        <mat-label>Restaurant Image</mat-label>
+        <input matInput type="text" formControlName="restaurantImage" />
+        <mat-hint *ngIf="registration.controls['restaurantImage'].invalid && registration.controls['restaurantImage'].dirty">
+          Invalid Restaurant Image
+        </mat-hint>
+      </mat-form-field>
+      <br />
+
+      <mat-form-field appearance="fill">
+        <mat-label>Location</mat-label>
+        <input matInput type="text" formControlName="location" />
+        <mat-hint *ngIf="registration.controls['location'].invalid && registration.controls['location'].dirty">
+          Invalid Location
+        </mat-hint>
+      </mat-form-field>
+      <br />
+
+      <div class="button-container">
+        <button class="action-button" type="submit" [disabled]="registration.invalid">Add Restaurant</button>
+        <button class="action-button" type="button" routerLink="/admin">Main Menu</button>
+      </div>
+    </form>
+  </div>
+</div>

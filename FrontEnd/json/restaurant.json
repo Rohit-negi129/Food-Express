@@ -1,0 +1,138 @@
+{
+    "restaurants":[
+{
+    "restaurantId": "rst101",
+    "restaurantName": "chinesechef",
+    "description": "chinese",
+    "restaurantImage":"chinesechef",
+    "location": "shalimar bagh",
+    "rating":"4.5",
+
+    "foodMenu": [
+      {
+        "itemId": 1,
+        "itemName": "Chow Mein",
+        "description": "Chow mein is not only one of the most popular dishes in China, but it has also become a signature dish at Chinese restaurants all around the world. With stir-fried noodles, and your choice of sauteed tofu, vegetables.",
+        "price": 399.99,
+        "foodImage":"ChowMein"
+      },
+      {
+        "itemId": 2,
+        "itemName": "Kung Pao Chicken",
+        "description": "This classic dish originated from Sichuan cuisine (south-western China) and is a meal that is often first associated with typical Chinese food and cuisine. With stir-fried chicken, peanuts, vegetables, and chili peppers, this dish is sure to satisfy in its perfected simplicity.",
+        "price": 599.99,
+        "foodImage":"KungPaoChicken"
+      },
+      {
+        "itemId": 3,
+        "itemName": "Chinese Hot Pot",
+        "description": " simmering a pot of soup stock along with other raw ingredients, allowing it to cook at the dining table itself. This method of Chinese cuisine, a tradition brought down from noble banquets.",
+        "price": 799.99,
+        "foodImage":"ChineseHotPot"
+      },
+      {
+        "itemId": 4,
+        "itemName": "Spring Rolls",
+        "description": " consumed as a seasonal snack at spring festivals, these fried and savory rolls filled with cabbage, vegetables, or other meat fillings have become a crispy and tasty addition to any main.",
+        "price": 399.99,
+        "foodImage":"SpringRolls"
+      },
+      {
+        "itemId": 5,
+        "itemName": "Wonton Soup",
+        "description": " wontons are a type of dumpling draped in egg yolk wrappings.",
+        "price": 499.99,
+        "foodImage":"WontonSoup"
+      }
+    ]
+    
+  },
+  {
+    "restaurantId": "rst102",
+    "restaurantName": "eating point",
+    "description": "chinese",
+    "restaurantImage": "eatingpoint",
+    "location": "shalimar bagh",
+    "foodMenu": [
+      {
+        "_id": 1,
+        "itemName": "Chow Mein",
+        "description": "Chow mein is not only one of the most popular dishes in China, but it has also become a signature dish at Chinese restaurants all around the world. With stir-fried noodles, and your choice of sauteed tofu, vegetables.",
+        "price": 399.99,
+        "foodImage":"ChowMein"
+      },
+      {
+        "_id": 2,
+        "itemName": "Kung Pao Chicken",
+        "description": "This classic dish originated from Sichuan cuisine (south-western China) and is a meal that is often first associated with typical Chinese food and cuisine. With stir-fried chicken, peanuts, vegetables, and chili peppers, this dish is sure to satisfy in its perfected simplicity.",
+        "price": 599.99
+      },
+      {
+        "_id": 3,
+        "itemName": "Chinese Hot Pot",
+        "description": " simmering a pot of soup stock along with other raw ingredients, allowing it to cook at the dining table itself. This method of Chinese cuisine, a tradition brought down from noble banquets.",
+        "price": 799.99
+      },
+      {
+        "_id": 4,
+        "itemName": "Spring Rolls",
+        "description": " consumed as a seasonal snack at spring festivals, these fried and savory rolls filled with cabbage, vegetables, or other meat fillings have become a crispy and tasty addition to any main.",
+        "price": 399.99
+      },
+      {
+        "_id": 5,
+        "itemName": "Wonton Soup",
+        "description": " wontons are a type of dumpling draped in egg yolk wrappings.",
+        "price": 499.99
+      }
+    ]
+    
+  },
+  {
+    "restaurantId": "rst103",
+    "restaurantName": "Chilli",
+    "description": "chinese",
+    "restaurantImage":"chinesechef",
+    "location": "shalimar bagh",
+
+    "foodMenu": [
+      {
+        "_id": 1,
+        "itemName": "Chow Mein",
+        "description": "Chow mein is not only one of the most popular dishes in China, but it has also become a signature dish at Chinese restaurants all around the world. With stir-fried noodles, and your choice of sauteed tofu, vegetables.",
+        "price": 399.99,
+        "foodImage":"ChowMein"
+      },
+      {
+        "_id": 2,
+        "itemName": "Kung Pao Chicken",
+        "description": "This classic dish originated from Sichuan cuisine (south-western China) and is a meal that is often first associated with typical Chinese food and cuisine. With stir-fried chicken, peanuts, vegetables, and chili peppers, this dish is sure to satisfy in its perfected simplicity.",
+        "price": 599.99,
+        "foodImage":"KungPaoChicken"
+      },
+      {
+        "_id": 3,
+        "itemName": "Chinese Hot Pot",
+        "description": " simmering a pot of soup stock along with other raw ingredients, allowing it to cook at the dining table itself. This method of Chinese cuisine, a tradition brought down from noble banquets.",
+        "price": 799.99,
+        "foodImage":"ChineseHotPot"
+      },
+      {
+        "_id": 4,
+        "itemName": "Spring Rolls",
+        "description": " consumed as a seasonal snack at spring festivals, these fried and savory rolls filled with cabbage, vegetables, or other meat fillings have become a crispy and tasty addition to any main.",
+        "price": 399.99,
+        "foodImage":"SpringRolls"
+      },
+      {
+        "_id": 5,
+        "itemName": "Wonton Soup",
+        "description": " wontons are a type of dumpling draped in egg yolk wrappings.",
+        "price": 499.99,
+        "foodImage":"WontonSoup"
+      }
+    ]
+    
+  }
+]
+}

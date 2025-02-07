@@ -1,0 +1,21 @@
+<div id="box">
+  <div id="delete-restaurant">
+      <h2>Delete Restaurant</h2>
+      <hr>
+      <br>
+
+      <form [formGroup]="check" action="">
+          <mat-form-field appearance="fill">
+              <mat-label>Restaurant UniqueId</mat-label>
+              <input matInput type="text" formControlName="restaurantId">
+              <mat-hint *ngIf="!restaurantId?.valid && restaurantId?.dirty">Restaurant UniqueId is required</mat-hint>
+          </mat-form-field>
+          <br>
+
+          <div class="button-container">
+              <button class="action-button" type="submit" [disabled]="check.invalid" (click)="deleteRestaurant()">Delete Restaurant</button>
+              <button class="action-button" type="button" routerLink="/admin">Main Menu</button>
+          </div>
+      </form>
+  </div>
+</div>

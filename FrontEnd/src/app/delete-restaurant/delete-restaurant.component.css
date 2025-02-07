@@ -1,0 +1,56 @@
+#box {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#delete-restaurant h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+mat-form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.action-button {
+  width: 48%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #ff6347; /* Tomato color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.action-button:hover {
+  background-color: #ff4500; /* Darker on hover */
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: #ff6347;
+  margin-bottom: 20px;
+}
+
+mat-hint {
+  font-size: 12px;
+  color: #ff6347;
+}

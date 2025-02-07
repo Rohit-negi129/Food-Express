@@ -1,0 +1,16 @@
+<mat-card class="food-card">
+  <mat-card-header>
+      <mat-card-title id="title">{{foodItem?.itemName}}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image src="../../assets/food/{{foodItem?.foodImage}}.jpg" class="food-image" alt="{{foodItem?.itemName}}">
+  <mat-card-content>
+      <mat-card-subtitle class="content">{{foodItem?.description}}</mat-card-subtitle>
+      <mat-card-subtitle class="price"><strong>₹ {{foodItem?.price}}/-</strong></mat-card-subtitle>
+  </mat-card-content>
+  <mat-card-actions>
+      <button class="btn btn-primary add-to-cart" (click)="addtocart(foodItem)">
+          <mat-icon class="shoppingcart" matTooltip="Add to cart" color="info">add_shopping_cart</mat-icon>
+          Add to cart
+      </button>
+  </mat-card-actions>
+</mat-card>

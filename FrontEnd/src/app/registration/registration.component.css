@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2; /* Light background color for contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height */
+  margin: 0;
+}
+
+#background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#top {
+  width: 100%; /* Full width */
+}
+
+.registration-form {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 400px; /* Limit width for better readability */
+  margin: auto; /* Center the form */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4A90E2; /* Accent color for the title */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  color: #333; /* Darker label color */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%; /* Full width */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s; /* Smooth transition */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #4A90E2; /* Change border color on focus */
+  outline: none; /* Remove outline */
+}
+
+button {
+  background-color: #4A90E2; /* Button color */
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Full width */
+  font-size: 16px;
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+  background-color: #357ABD; /* Darker shade on hover */
+}
+
+.error-message {
+  color: #ff4d4d; /* Red color for error messages */
+  font-size: 12px; /* Smaller font size for error messages */
+}
+
+#click {
+  margin-top: 15px;
+  background-color: #E5E5E5; /* Different background color for login button */
+  border: none;
+  color: #4A90E2; /* Button color */
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Full width */
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+#click:hover {
+  background-color: #4A90E2;
+  color: aliceblue; /* Slightly darker shade on hover */
+}
